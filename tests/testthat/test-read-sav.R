@@ -149,3 +149,9 @@ test_that("system missings read as NA", {
 
   expect_identical(df$x, c(1, NA))
 })
+
+test_that("Can read Q Examples sav files",
+{
+    sav.file <- system.file("extdata", "Cola.sav", package = "flipExampleData")
+    expect_error(read_sav(sav.file), NA)
+})

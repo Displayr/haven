@@ -23,7 +23,8 @@ Depends: R (>= 3.2)
 Imports: forcats (>= 0.2.0), hms, methods, Rcpp (>= 0.11.4), readr (>=
         0.1.0), rlang (>= 0.4.0), tibble, tidyselect, vctrs (>= 0.3.0)
 Suggests: covr, fs, knitr, rmarkdown, testthat, pillar (>= 1.4.0), cli,
-        crayon
+        crayon, flipExampleData
+Remotes: Displayr/flipExampleData	
 LinkingTo: Rcpp
 VignetteBuilder: knitr
 Encoding: UTF-8
