@@ -356,6 +356,8 @@ void write_sav_(List data, CharacterVector path, bool compress) {
   Writer writer(HAVEN_SAV, data, path);
   if (compress)
     writer.setCompression(READSTAT_COMPRESS_BINARY);
+  else
+    writer.setCompression(READSTAT_COMPRESS_ROWS);
   writer.write();
 }
 
